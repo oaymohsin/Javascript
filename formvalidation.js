@@ -26,7 +26,7 @@ function emailvalidation(){
     else{
         
             var error="Characters Must be greater than 5 characters";
-            document.getElementById("emailHelp").innerHTML=error;
+            document.getElementById("emailHelp").innerHTML=error;   
             returnvalue=false;
         
     }
