@@ -83,7 +83,7 @@ var calculate=()=>{
 
     let total_items=bcquantity+espressoquantity+lattequantity+capquantity;
     let total_price=bcprice+espressoprice+latteprice+capprice;
-    result=document.getElementById('resultarea').innerHTML=`Total Items: ${total_items} \nTotal Price: ${total_price}`;
+    result=document.getElementById('resultarea').innerHTML=`Total Items: ${total_items} \n Total Price: ${total_price} \n You have Buy: \n ${bcquantity} Black Coffee \n ${espressoquantity} Espresso \n ${lattequantity} Latte \n ${capquantity} Cappuccino `;
     // result=`Total Items: ${total_items} /n Total Price: ${total_price}`;
     // alert(bcprice);
     // }
