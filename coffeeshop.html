@@ -45,9 +45,15 @@
                 </div>
 
             </div>
-            <div class="col-3">
-                <button class="btn btn-danger w-100" onclick="cappuccino()">Cappuccino <br> Rs 200</button>
+            <div class="col-3 d-flex">
+                <div class="col-8">
+                    <button class="btn btn-danger w-100 h-100" onclick="cappuccino()">Cappuccino <br> Rs 200</button>
 
+                </div>
+                <div class="col-4">
+                    <button class="btn btn-secondary fw-bold w-50 m-2" id="cappuccinobtn" onclick="cappuccino()"> + </button>
+                    <button class="btn btn-danger fw-bold w-50 m-2" id="cappuccinombtn" onclick="minuscappuccino()"> - </button>
+                </div>
             </div>
         </div>
         <div class="row my-3">
@@ -90,7 +96,7 @@
                 <textarea class="w-100 p-3 border-0" name="resultarea" id="resultarea" cols="30" rows="8" disabled></textarea>
             </div>
             <div class="col-6 d-flex justify-content-center align-items-center">
-                <i><h5 class="h5 text-success" id="thanksarea"></h5></i>
+                <i><h5 class="h5 text-success text-center" id="thanksarea"></h5></i>
             </div>
         </div>
         <hr>

@@ -9,8 +9,11 @@ result=document.getElementById("resultarea");
     let totalmarks=400;
    
 
-    if(math>100 ||english>100 || computer>100 || urdu>100){
+    if(math>100 ||english>100 || computer>100 || urdu>100 ){
         result.innerHTML="Numbers greater than 100 in any field are not allowed because total marks of every subject are 100";
+    }
+    else if(math<0 ||english<0 || computer<0 || urdu<0 ){
+        result.innerHTML="Numbers less than 0 in any field are not allowed because minimum marks  of every subject could be 0";
     }
     else{
         let percentage=((parseInt(math)+parseInt(english)+parseInt(computer)+parseInt(urdu))*100)/400;
