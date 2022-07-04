@@ -52,6 +52,7 @@ let latte=()=>{
 }
 let cappuccino=()=>{
     document.getElementById('calculatetotal').disabled=false;
+    document.getElementById('cappuccinombtn').disabled=false;  
 
     let price=200;
     let blackcoffeevalue=document.getElementById('cappuccinoinput').value;
@@ -142,6 +143,23 @@ let minuslatte=()=>{
     document.getElementById('latteinput').value=(parseInt(blackcoffeevalue)-price);
     let quantity=parseInt((document.getElementById('latteinput').value)/price);
     document.getElementById('lattequantity').value=quantity;
+    }
+}
+let minuscappuccino=()=>{
+    // document.getElementById('calculatetotal').disabled=false;
+
+    let price=200;
+    let blackcoffeevalue=document.getElementById('cappuccinoinput').value;
+    if(blackcoffeevalue=="0"){
+        document.getElementById('cappuccinombtn').disabled=true;  
+    // document.getElementById('calculatetotal').disabled=true;
+
+    }
+    else{
+        document.getElementById('cappuccinombtn').disabled=false;
+    document.getElementById('cappuccinoinput').value=(parseInt(blackcoffeevalue)-price);
+    let quantity=parseInt((document.getElementById('cappuccinoinput').value)/price);
+    document.getElementById('cappuccinoquantity').value=quantity;
     }
 }
 
