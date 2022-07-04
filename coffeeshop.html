@@ -9,23 +9,40 @@
 
 </head>
 <body>
-    <div class="container">
-        <div class="row my-3">
+    <div class="container mt-0">
+        <div class="row mb-2">
             <div class="col-12 d-flex  justify-content-center">
                 <img src="coffee.png" class="img-fluid mb-2" alt="" style="width: 100px;height: 100px ;">
                 <h1 class="h1 text-center text-danger mt-4 py-2">Coffee Shop</h1>
             </div>
         </div>
         <div class="row">
-            <div class="col-3">
-                <button class="btn btn-dark fw-bold w-100" id="blckcoffee" onclick="blackcoffee()"> Black Coffee <br> Rs 100</button>
+            <div class="col-3 d-flex">
+                <div class="col-8 ">
+                    <button class="btn btn-dark fw-bold w-100 h-100  " id="blckcoffee" onclick="blackcoffee()"> Black Coffee <br> Rs 100</button>
+                </div>
+                <div class="col-4">
+                    <button class="btn btn-secondary fw-bold w-50 m-2" id="blckcoffee" onclick="blackcoffee()"> + </button>
+                    <button class="btn btn-danger fw-bold w-50 m-2" id="blackcmbtn" onclick="minusblackcoffee()"> - </button>
+                </div>
             </div>
-            <div class="col-3">
-                <button class="btn btn-success w-100" onclick="espresso()">Espresso <br> Rs 120</button>
-
+            <div class="col-3 d-flex">
+                <div class="col-8">
+                    <button class="btn btn-success w-100 h-100" onclick="espresso()">Espresso <br> Rs 120</button>
+                </div>
+                <div class="col-4">
+                    <button class="btn btn-secondary fw-bold w-50 m-2" id="blckcoffee" onclick="espresso()"> + </button>
+                    <button class="btn btn-danger fw-bold w-50 m-2" id="espressombtn" onclick="minusespressocoffee()"> - </button>
+                </div>
             </div>
-            <div class="col-3">
-                <button class="btn btn-warning w-100" onclick="latte()">Latte <br> Rs 150</button>
+            <div class="col-3 d-flex">
+                <div class="col-8">
+                    <button class="btn btn-warning w-100 h-100" onclick="latte()">Latte <br> Rs 150</button>
+                </div>
+                <div class="col-4">
+                    <button class="btn btn-secondary fw-bold w-50 m-2" id="lattebtn" onclick="latte()"> + </button>
+                    <button class="btn btn-danger fw-bold w-50 m-2" id="lattembtn" onclick="minuslatte()"> - </button>
+                </div>
 
             </div>
             <div class="col-3">
@@ -70,7 +87,7 @@
         </div>
         <div class="row my-3">
             <div class="col-6">
-                <textarea class="w-100 p-3 border-0" name="resultarea" id="resultarea" cols="30" rows="10" disabled></textarea>
+                <textarea class="w-100 p-3 border-0" name="resultarea" id="resultarea" cols="30" rows="8" disabled></textarea>
             </div>
             <div class="col-6 d-flex justify-content-center align-items-center">
                 <i><h5 class="h5 text-success" id="thanksarea"></h5></i>

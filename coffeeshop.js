@@ -1,5 +1,6 @@
 let blackcoffee=()=>{
     document.getElementById('calculatetotal').disabled=false;
+    document.getElementById('blackcmbtn').disabled=false;
 
     let price=100;
     let blackcoffeevalue=document.getElementById('blackcoffeeinput').value;
@@ -16,6 +17,8 @@ let blackcoffee=()=>{
 }
 let espresso=()=>{
     document.getElementById('calculatetotal').disabled=false;
+    document.getElementById('espressombtn').disabled=false;
+
 
     let price=120;
     let blackcoffeevalue=document.getElementById('espressoinput').value;
@@ -32,6 +35,7 @@ let espresso=()=>{
 }
 let latte=()=>{
     document.getElementById('calculatetotal').disabled=false;
+    document.getElementById('lattembtn').disabled=false;
 
     let price=150;
     let blackcoffeevalue=document.getElementById('latteinput').value;
@@ -89,3 +93,55 @@ var calculate=()=>{
     // alert(bcprice);
     // }
 }
+let minusblackcoffee=()=>{
+    // document.getElementById('calculatetotal').disabled=false;
+
+    let price=100;
+    let blackcoffeevalue=document.getElementById('blackcoffeeinput').value;
+    if(blackcoffeevalue=="0"){
+        document.getElementById('blackcmbtn').disabled=true;  
+    // document.getElementById('calculatetotal').disabled=true;
+
+    }
+    else{
+        document.getElementById('blackcmbtn').disabled=false;
+    document.getElementById('blackcoffeeinput').value=(parseInt(blackcoffeevalue)-price);
+    let quantity=parseInt((document.getElementById('blackcoffeeinput').value)/price);
+    document.getElementById('blackcoffeequantity').value=quantity;
+    }
+}
+let minusespressocoffee=()=>{
+    // document.getElementById('calculatetotal').disabled=false;
+
+    let price=120;
+    let blackcoffeevalue=document.getElementById('espressoinput').value;
+    if(blackcoffeevalue=="0"){
+        document.getElementById('espressombtn').disabled=true;  
+    // document.getElementById('calculatetotal').disabled=true;
+
+    }
+    else{
+        document.getElementById('espressombtn').disabled=false;
+    document.getElementById('espressoinput').value=(parseInt(blackcoffeevalue)-price);
+    let quantity=parseInt((document.getElementById('espressoinput').value)/price);
+    document.getElementById('espressoquantity').value=quantity;
+    }
+}
+let minuslatte=()=>{
+    // document.getElementById('calculatetotal').disabled=false;
+
+    let price=150;
+    let blackcoffeevalue=document.getElementById('latteinput').value;
+    if(blackcoffeevalue=="0"){
+        document.getElementById('lattembtn').disabled=true;  
+    // document.getElementById('calculatetotal').disabled=true;
+
+    }
+    else{
+        document.getElementById('lattembtn').disabled=false;
+    document.getElementById('latteinput').value=(parseInt(blackcoffeevalue)-price);
+    let quantity=parseInt((document.getElementById('latteinput').value)/price);
+    document.getElementById('lattequantity').value=quantity;
+    }
+}
+
